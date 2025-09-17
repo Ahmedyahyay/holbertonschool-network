@@ -1,3 +1,9 @@
-#!/usr/bin/env bash
-# A Bash script that displays listening sockets and their program names.
-sudo netstat -lp
+#!/bin/bash
+# Script to display listening TCP and UDP ports with PID/Program name
+
+echo "Active Internet connections (only servers)"
+ss -tunlp  # t = tcp, u = udp, n = numeric, l = listening, p = show PID/program
+
+echo "Active UNIX domain sockets (only servers)"
+ss -xlp  # x = unix sockets, l = listening, p = show PID/program
+
