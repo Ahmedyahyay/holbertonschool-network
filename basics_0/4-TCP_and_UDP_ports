@@ -3,4 +3,3 @@
 
 # Show all listening TCP/UDP sockets with PID and program name
 sudo ss -tulnp
-
